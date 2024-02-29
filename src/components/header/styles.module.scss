@@ -8,12 +8,8 @@
   @include utils.container;
 }
 
-.photo {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
+.icon {
   margin-bottom: 0.75rem;
-  object-fit: cover;
 }
 
 .title {

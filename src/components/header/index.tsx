@@ -1,17 +1,11 @@
-import Image from 'next/image'
+import { HandMetal } from 'lucide-react'
 import styles from './styles.module.scss'
 
 export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Image
-          width={150}
-          height={150}
-          src="/avatar.svg"
-          className={styles.photo}
-          alt=""
-        />
+        <HandMetal className={styles.icon} size={48} />
 
         <h1 className={styles.title}>Clodoaldo Dantas</h1>
         <p className={styles.text}>Desenvolvedor Front-end 💻</p>

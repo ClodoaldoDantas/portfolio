@@ -1,8 +1,8 @@
-import { Header } from '@/components/header'
-import { Linkedin, Mail, GitGraph } from 'lucide-react'
-import styles from './page.module.scss'
-import { ExternalLink } from '@/components/external-link'
 import { Badge } from '@/components/badge'
+import { ExternalLink } from '@/components/external-link'
+import { Header } from '@/components/header'
+import { ExternalLinkIcon } from 'lucide-react'
+import styles from './page.module.scss'
 
 export default function Home() {
   return (
@@ -38,21 +38,21 @@ export default function Home() {
           <ul className={styles.list}>
             <li>
               <ExternalLink href="https://www.linkedin.com/in/clodoaldodantas/">
-                <Linkedin size={20} />
+                <ExternalLinkIcon size={20} />
                 Linkedin
               </ExternalLink>
             </li>
 
             <li>
               <ExternalLink href="mailto:clodoaldodantas8@gmail.com">
-                <Mail size={20} />
+                <ExternalLinkIcon size={20} />
                 E-mail
               </ExternalLink>
             </li>
 
             <li>
               <ExternalLink href="https://github.com/ClodoaldoDantas">
-                <GitGraph size={20} />
+                <ExternalLinkIcon size={20} />
                 Github
               </ExternalLink>
             </li>
