@@ -1,13 +1,5 @@
 {
   "title": "about",
   "type": "object",
-  "properties": {
-    "title": {
-      "required": true,
-      "description": "título do site",
-      "fieldType": "String",
-      "dataType": "string",
-      "title": "Title"
-    }
-  }
+  "properties": {}
 }
