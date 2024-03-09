@@ -1,0 +1,11 @@
+@use "@/styles/utils" as utils;
+
+.section {
+  h2 {
+    @include utils.title;
+  }
+
+  p {
+    font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  }
+}
