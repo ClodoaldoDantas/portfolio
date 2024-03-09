@@ -6,9 +6,11 @@ const items = [
   { title: 'HTML', color: '#f97316' },
   { title: 'CSS', color: '#3b82f6' },
   { title: 'Javascript', color: '#eab308' },
+  { title: 'Sass', color: '#bf4080' },
   { title: 'React', color: '#1d4ed8' },
   { title: 'Next JS', color: '#030712' },
   { title: 'Vue', color: '#65a30d' },
+  { title: 'Nuxt JS', color: '#65a30d' },
 ]
 
 export function Skills() {
