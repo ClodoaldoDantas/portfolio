@@ -1,11 +1,11 @@
 {
-  "commit": "00a183117b07dd4ea8302b5fb9bd0355609f5774",
-  "generated": "Sat, 09 Mar 2024 21:41:07 GMT",
+  "commit": "07cfe97fde62a2930482af156b658173063e62bb",
+  "generated": "2024-03-09T21:42:46.768Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "c6f2ef68d1eb920be1e6f899be96970703d036ee",
-        "hash": "1745467204",
+        "commit": "07cfe97fde62a2930482af156b658173063e62bb",
+        "hash": "3102695432",
         "path": "outstatic/content/about/clodoaldo-dantas.md"
       },
       "author": {
@@ -15,9 +15,9 @@
       "collection": "about",
       "coverImage": "",
       "description": "",
-      "publishedAt": "2024-03-09T20:48:39.102Z",
+      "publishedAt": "2024-03-09T21:24:22.769Z",
       "slug": "clodoaldo-dantas",
-      "status": "published",
+      "status": "draft",
       "title": "Clodoaldo Dantas"
     }
   ]
