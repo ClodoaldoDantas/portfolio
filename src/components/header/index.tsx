@@ -9,7 +9,7 @@ export function Header() {
         <HandMetal className={styles.icon} size={48} />
 
         <h1 className={styles.title}>Clodoaldo Dantas</h1>
-        <p className={styles.text}>Desenvolvedor Front-end 💻</p>
+        <p className={styles.text}>Desenvolvedor Front-end Pleno 💻</p>
         <p className={styles.text}>Morando em Fortaleza-CE 🏖️</p>
         <p className={styles.text}>
           Trabalhando em{' '}
