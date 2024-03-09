@@ -16,7 +16,7 @@ const items = [
 export function Skills() {
   return (
     <Section>
-      <h2>Skills</h2>
+      <h2>Stack</h2>
 
       <div className={styles.flex}>
         {items.map((item) => (
