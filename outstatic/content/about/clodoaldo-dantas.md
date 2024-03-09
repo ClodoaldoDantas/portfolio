@@ -1,7 +1,6 @@
 ---
-title: 'Clodoaldo Dantas
-'
-status: 'draft'
+title: 'Clodoaldo Dantas '
+status: 'published'
 author:
   name: 'Clodoaldo Dantas'
   picture: 'https://avatars.githubusercontent.com/u/32376905?v=4'
