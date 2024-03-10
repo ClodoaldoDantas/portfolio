@@ -29,10 +29,10 @@ export function Experiences() {
         {experiences.map((experience) => (
           <li key={experience.company} className={styles.experience}>
             <strong>{experience.company}</strong>
+            <span>{experience.role}</span>
             <time>
               <Calendar size={18} /> {experience.date}
             </time>
-            <span>{experience.role}</span>
           </li>
         ))}
       </ul>
