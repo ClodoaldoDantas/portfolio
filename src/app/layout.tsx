@@ -4,7 +4,7 @@ import './globals.scss'
 
 const rubik = Rubik({
   subsets: ['latin'],
-  weight: ['400', '600'],
+  weight: ['400', '500', '600'],
 })
 
 export const metadata: Metadata = {
