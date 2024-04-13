@@ -1,26 +1,28 @@
 import { Badge } from '@/components/badge'
 import { Section } from '@/components/section'
 import styles from './styles.module.scss'
+import { fetchStack } from '@/lib/notion'
 
-const items = [
-  { title: 'HTML', color: '#f97316' },
-  { title: 'CSS', color: '#3b82f6' },
-  { title: 'Javascript', color: '#eab308' },
-  { title: 'Sass', color: '#bf4080' },
-  { title: 'React', color: '#1d4ed8' },
-  { title: 'Next JS', color: '#030712' },
-  { title: 'Vue', color: '#65a30d' },
-  { title: 'Nuxt JS', color: '#65a30d' },
-]
+type Tech = {
+  title: string
+  color: string
+}
 
-export function Skills() {
+export async function Skills() {
+  const stackData = await fetchStack()
+
+  const stack: Tech[] = stackData.results.map((item: any) => ({
+    title: item.properties.tech.title[0].plain_text,
+    color: item.properties.color.rich_text[0].plain_text,
+  }))
+
   return (
     <Section>
       <h2>Stack</h2>
 
       <div className={styles.flex}>
-        {items.map((item) => (
-          <Badge key={item.title} text={item.title} color={item.color} />
+        {stack.map((tech) => (
+          <Badge key={tech.title} text={tech.title} color={tech.color} />
         ))}
       </div>
     </Section>
