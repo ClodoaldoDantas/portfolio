@@ -1,7 +1,7 @@
 import { Header } from '@/components/header'
 import { About } from '@/partials/about'
 import { Skills } from '@/partials/skills'
-import { SocialLinks } from '@/partials/social-links'
+import { Links } from '@/partials/links'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <main className={styles.main}>
         <About />
         <Skills />
-        <SocialLinks />
+        <Links />
       </main>
     </>
   )

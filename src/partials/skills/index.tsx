@@ -9,9 +9,9 @@ type Tech = {
 }
 
 export async function Skills() {
-  const stackData = await fetchStack()
+  const response = await fetchStack()
 
-  const stack: Tech[] = stackData.results.map((item: any) => ({
+  const stack: Tech[] = response.results.map((item: any) => ({
     title: item.properties.tech.title[0].plain_text,
     color: item.properties.color.rich_text[0].plain_text,
   }))
