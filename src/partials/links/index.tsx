@@ -1,15 +1,22 @@
 import { ExternalLink } from '@/components/external-link'
 import { Section } from '@/components/section'
 import { ExternalLinkIcon } from 'lucide-react'
+import { fetchLinks } from '@/lib/notion'
 import styles from './styles.module.scss'
 
-const links = [
-  { title: 'Linkedin', url: 'https://www.linkedin.com/in/clodoaldodantas/' },
-  { title: 'E-mail', url: 'mailto:clodoaldodantas8@gmail.com' },
-  { title: 'Github', url: 'https://github.com/ClodoaldoDantas' },
-]
+type Link = {
+  title: string
+  url: string
+}
 
-export function SocialLinks() {
+export async function Links() {
+  const response = await fetchLinks()
+
+  const links: Link[] = response.results.map((item: any) => ({
+    title: item.properties.label.title[0].plain_text,
+    url: item.properties.url.rich_text[0].plain_text,
+  }))
+
   return (
     <Section>
       <h2>Links</h2>
