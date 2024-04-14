@@ -9,6 +9,10 @@
 - Typescript
 - Sass
 
+## ✨ Funcionalidades
+
+A integração com a API do Notion permite que eu gerencie todo o conteúdo do site diretamente no Notion, tornando o processo de atualização mais eficiente e flexível.
+
  ### 💻 Como executar o projeto
 
 1. Certifique-se de ter o Node instalado na sua máquina.
