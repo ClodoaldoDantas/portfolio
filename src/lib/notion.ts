@@ -19,5 +19,11 @@ export const fetchStack = () => {
 export const fetchLinks = () => {
   return client.databases.query({
     database_id: process.env.LINKS_DATABASE_ID as string,
+    filter: {
+      property: 'enabled',
+      checkbox: {
+        equals: true,
+      },
+    },
   })
 }
