@@ -11,7 +11,8 @@
 
 ## ✨ Funcionalidades
 
-A integração com a API do Notion permite que eu gerencie todo o conteúdo do site diretamente no Notion, tornando o processo de atualização mais eficiente e flexível.
+- A integração com a API do Notion permite que eu gerencie todo o conteúdo do site diretamente no Notion, tornando o processo de atualização mais eficiente e flexível.
+- Foi utilizado a API do github para buscar as minhas informações pessoais.
 
  ### 💻 Como executar o projeto
 
